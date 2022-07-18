@@ -33,22 +33,27 @@ COLORS:
 }
 .container {
   position: relative;
+  width: 100%;
+  height: 70vh;
 }
 
 #login,
 #imagem {
   display: inline-block;
-  margin: 4%;
+  margin: 3%;
 }
 #imagem {
   width: 50%;
+  position: absolute;
+  right: 0;
 }
 #login {
   border-radius: 2%;
-  height: 350px;
+  height: 360px;
   padding: 10px;
   position: relative;
-  top: -110px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 30%;
   text-align: center;
   line-height: 30px;
@@ -60,25 +65,28 @@ h3 {
   margin: 20px;
 }
 
-#login button {
+#btn {
   display: flex;
   justify-content: center;
+  cursor: pointer;
+}
+
+#botao {
+  text-decoration: none;
   width: 80px;
-  height: 33px;
-  padding: 10px 10px;
+  height: 35px;
+  padding: 5px 5px;
   background-color: #1c5b9e;
   color: white;
   border: #0e2946;
   border-radius: 4%;
 }
-#btn {
-  margin-left: 60%;
-  transform: translateX(-50%);
-}
+
 #login input {
-  margin-left: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   display: block;
-  padding: 15px 10px;
+  padding: 10px 10px;
   margin-bottom: 15px;
   width: 70%;
   border: 1px solid #ddd;
@@ -87,7 +95,6 @@ h3 {
 #imagem img {
   width: 100%;
   border-radius: 3%;
-  float: right;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -102,9 +109,17 @@ footer {
 footer a,
 p {
   text-align: center;
-  color: rgba(207, 205, 205, 0.808);
+  color: #ddd;
   text-decoration: none;
   padding: 4px;
   display: inline-block;
   margin-left: 12px;
+}
+#criar-conta a {
+  font-size: 15px;
+  color: rgb(150, 149, 149);
+  text-decoration: none;
+}
+#criar-conta {
+  margin-top: 5px;
 }

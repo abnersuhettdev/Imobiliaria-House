@@ -4,6 +4,6 @@ $("#botao").click(function () {
   } else if ($("#user").val() !== "admin" || $("#senha").val() !== "admin") {
     alert("Usuário ou Senha Inválido!");
   } else {
-    window.location.assign("../Dashboard/dashboard.html")
+    window.location.assign("../Dashboard/dashboard.html");
   }
 });
